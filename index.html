@@ -9,12 +9,33 @@
 </head>
 
 <body>
-    <div id="time_limit">
-        <!--試験までの日数-->
+    <div id="clock">
+        <div id="time_limit">
+            <!--試験までの日数-->
+        </div>
     </div>
+        <div id="prog_table">
 
-    <!-- <div id="progress_">
-    </div> -->
+            <div class="row" id="row_hum">
+                <!--人文科学の進捗-->
+                <div class="cell">Humanities</div>
+                <div class="cell"><progress id="prog_hum" value="0" max="22"></div>
+                <div class="cell" id="per_hum">0%</div>
+            </div>
+
+            <div class="row" id="row_math">
+                <!--数学の進捗-->
+                <div class="cell">Mathmatica</div>
+                <div class="cell"><progress id="prog_math" value="0" max="10"></div>
+                <div class="cell" id="per_math">00.00%</div>
+            </div>
+
+        </div>
+
+        <!-- <div id="progress_">
+        </div> -->
+
+    </div>
 
     <script src="js/index.js"></script>
 </body>
