@@ -35,10 +35,12 @@ body{
     }
 
 .row .cell:nth-child(1) {
-  width: 35%;
+  width: 30%;
   }
 .row .cell:nth-child(2) {
   width: 55%;
+  position: relative;
+  display: flex;
   }
 .row .cell:nth-child(3) {
   width: 20%;
@@ -46,6 +48,9 @@ body{
 
 progress {
     -webkit-appearance: none;
+    margin: auto;
+    margin-left: 0;
+    width : 90%;
     }
 ::-webkit-progress-bar {
     background-color: rgba(255, 255, 255, 0.75);
@@ -53,3 +58,9 @@ progress {
 ::-webkit-progress-value {
     background-color: red;
     }
+
+.ratio{
+    color: black;
+    position: absolute;
+    left: 30%;
+}
