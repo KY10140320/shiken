@@ -1,5 +1,5 @@
 const val_math = 260; //数的処理
-const val_hum = 3.0; //人文科学
+const val_socio = 3.0; //人文科学
 
 
 
@@ -40,7 +40,7 @@ const max_math = document.getElementById("prog_math").max;
 document.getElementById("prog_math").value = val_math;
 document.getElementById("per_math").innerText = `${pad2(val_math * 100 / max_math)}%`;
 
-const max_hum = document.getElementById("prog_hum").max;
-document.getElementById("prog_hum").value = val_hum;
-document.getElementById("per_hum").innerText = `${pad2(val_hum * 100 / max_hum)}%`;
+const max_socio = document.getElementById("prog_socio").max;
+document.getElementById("prog_socio").value = val_socio;
+document.getElementById("per_socio").innerText = `${pad2(val_socio * 100 / max_socio)}%`;
 
