@@ -1,5 +1,5 @@
-const val_math = 196; //数的処理
-const val_hum = 2.3; //人文科学
+const val_math = 260; //数的処理
+const val_hum = 3.0; //人文科学
 
 
 
