@@ -1,5 +1,5 @@
 const val_math = 260; //数的処理
-const val_socio = 3; //人文科学
+const val_socio = 6; //人文科学
 const val_cur = 0;
 
 
