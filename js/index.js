@@ -1,6 +1,7 @@
 const val_math = 260; //数的処理
 const val_socio = 6; //人文科学
 const val_cur = 0;
+const val_deg = 0;
 
 
 
@@ -59,4 +60,9 @@ const max_cur = document.getElementById("prog_cur").max;
 document.getElementById("prog_cur").value = val_cur;
 document.getElementById("ratio_cur").innerText = `${to3Count(val_cur.toString())}/${to3Count(max_cur.toString())}`;
 document.getElementById("per_cur").innerText = `${pad2(val_cur * 100 / max_cur)}%`;
+
+const max_deg = document.getElementById("prog_deg").max;
+document.getElementById("prog_deg").value = val_deg;
+document.getElementById("ratio_deg").innerText = `${to3Count(val_deg.toString())}/${to3Count(max_deg.toString())}`;
+document.getElementById("per_deg").innerText = `${pad2(val_deg * 100 / max_deg)}%`;
 
