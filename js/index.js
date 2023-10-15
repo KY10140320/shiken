@@ -8,18 +8,22 @@ const time_limit = () => {
   const now = new Date();
   let diff = (now - deadline);
 
-  var day = pad(Math.floor(diff / (1000*60*60*24)));
+  // var day = pad(Math.floor(diff / (1000*60*60*24)));
 
   diff = diff % ( 1000 * 60 * 60 * 24 );
-  var hour = pad(Math.floor(diff / ( 1000 * 60 * 60 )));
+  var hour = Math.floor(diff / ( 1000 * 60 * 60 ));
 
   diff = diff % ( 1000 * 60 * 60 );
-  var min = pad(Math.floor(diff / ( 1000 * 60 )));
+  var min = Math.floor(diff / ( 1000 * 60 ));
 
   diff = diff % ( 1000 * 60 );
-  var sec = pad(Math.floor(diff / 1000));
+  var sec = Math.floor(diff / 1000);
 
-  return `${hour}:${min}:${sec}`
+  if(diff < 0){
+    return `20:00 START \n ${pad(-hour)}:${pad(-min)}:${pad(-sec)}`
+  }
+
+  return `${pad(hour)}:${pad(min)}:${pad(sec)}`
   };
 const updateClock = () => {
   document.getElementById("time_limit").innerText = time_limit();

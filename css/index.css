@@ -14,6 +14,9 @@ body{
     color: red;
     font-size: 50px;
     margin: auto;
+    text-align: center;
+    border: 1px;
+    border-color: red;
 }
 
 #prog_table{
