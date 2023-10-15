@@ -1,5 +1,5 @@
 
-const ragnarok = "2023/05/07"
+const ragnarok = "2023/10/18"
 
 //クロック
 const time_limit = () => {
