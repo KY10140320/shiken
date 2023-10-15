@@ -1,10 +1,10 @@
 
-const ragnarok = "2023-10-15T16:00"
+const ragnarok = "2023-10-15 16:00"
 
 //クロック
 const time_limit = () => {
   const pad = (num) => (num < 10 ? '0' : '') + num; //表記を二桁に固定
-  const deadline = new Date(ragnarok);
+  const deadline = new Date(ragnarok.replace(/-/g,"/"));
   const now = new Date();
   let diff = (now - deadline);
 
