@@ -1,12 +1,12 @@
 
-const ragnarok = "2023/10/18"
+const ragnarok = "2023/10/15/16:00"
 
 //クロック
 const time_limit = () => {
   const pad = (num) => (num < 10 ? '0' : '') + num; //表記を二桁に固定
   const deadline = new Date(ragnarok);
   const now = new Date();
-  let diff = (deadline - now);
+  let diff = (now - deadline);
 
   var day = pad(Math.floor(diff / (1000*60*60*24)));
 
@@ -19,7 +19,7 @@ const time_limit = () => {
   diff = diff % ( 1000 * 60 );
   var sec = pad(Math.floor(diff / 1000));
 
-  return `${day}:${hour}:${min}:${sec}`
+  return `${hour}:${min}:${sec}`
   };
 const updateClock = () => {
   document.getElementById("time_limit").innerText = time_limit();
