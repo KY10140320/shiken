@@ -20,7 +20,7 @@ const time_limit = () => {
   var sec = Math.floor(diff / 1000);
 
   if(diff < 0){
-    return `20:00 START \n ${pad(-hour - 1)}:${pad(-min)}:${pad(-sec)}`
+    return `20:00 START \n ${pad(-hour - 1)}:${pad(-min - 1)}:${pad(-sec - 1)}`
   }
 
   return `${pad(hour)}:${pad(min)}:${pad(sec)}`
